@@ -1,0 +1,45 @@
+//////////////////////////////////////////////////////////////////////////
+//
+//          Required Header Files
+//
+//////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+//////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name:  CheckLeapYear
+//  Description:    It is used to check the year is leap year or not
+//  Input:          Integer
+//  Output:         
+//  Author:         Omkar Santosh Durge
+//  Date:           29/10/2025
+//
+///////////////////////////////////////////////////////////////////////////////
+void CheckLeapYear(int year)
+{
+    if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
+    {
+        printf("It is a Leap Year...");
+    }
+    else
+    {
+        printf("It is not a Leap Year...");
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//
+//          Entry point function of the application
+//
+///////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int yr = 0;
+
+    printf("Enter the Year..:\n");
+    scanf("%d", &yr);
+
+    CheckLeapYear(yr);
+
+    return 0;
+}
