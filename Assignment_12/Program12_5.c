@@ -1,0 +1,46 @@
+//////////////////////////////////////////////////////////////////////////
+//
+//          Required Header Files
+//
+//////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+#include <stdbool.h>
+//////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name:  Is_Divisible_By_Five
+//  Description:    To check the number is divisible by 5 or not
+//  Input:          Integer
+//  Output:
+//  Author:         Omkar Santosh Durge
+//  Date:           31/10/2025
+//
+///////////////////////////////////////////////////////////////////////////////
+bool Is_Divisible_By_Five(int iNo)
+{
+    if (iNo % 5 == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+        
+    }
+}
+///////////////////////////////////////////////////////////////////////////////
+//
+//          Entry point function of the application
+//
+///////////////////////////////////////////////////////////////////////////////
+
+int main(void)
+{
+    int iNumber = 0;
+
+    printf("Enter the Number :");
+    scanf("%d", &iNumber);
+
+    printf("%s\n", Is_Divisible_By_Five(iNumber) ? "Yes" : "No");
+
+    return 0;
+}
