@@ -1,0 +1,50 @@
+//////////////////////////////////////////////////////////////////////////
+//
+//          Required Header Files
+//
+//////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+//////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name:  DisplayDigit
+//  Description:    To Display the Digits of a Number in reverse order
+//  Input:          Integer
+//  Output:
+//  Author:         Omkar Santosh Durge
+//  Date:           2/11/2025
+//
+///////////////////////////////////////////////////////////////////////////////
+void DisplayDigit(int iNo)
+{
+    int iDigit = 0;
+
+    if (iNo < 0)
+    {
+        iNo = -iNo;
+    }
+
+    while (iNo != 0)
+    {
+        iDigit = iNo % 10;
+        printf("%d\n", iDigit);
+
+        iNo = iNo / 10;
+    }
+}
+///////////////////////////////////////////////////////////////////////////////
+//
+//          Entry point function of the application
+//
+///////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+
+    printf("Enter the Number :");
+    scanf("%d", &iValue);
+
+    DisplayDigit(iValue);
+
+    return 0;
+}
